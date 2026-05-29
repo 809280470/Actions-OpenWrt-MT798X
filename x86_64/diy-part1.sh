@@ -35,7 +35,7 @@ git clone --depth=1 -b kix https://github.com/QiuSimons/luci-app-daed.git packag
 git clone --depth=1 https://github.com/QiuSimons/vmlinux-btf.git package/custom/vmlinux-btf
 
 # SSR+
-git clone --depth=1 https://github.com/fw876/helloworld.git package/custom/ssrp
+# git clone --depth=1 https://github.com/fw876/helloworld.git package/custom/ssrp
 
 # 功能插件
 git clone --depth=1 https://github.com/sirpdboy/luci-app-poweroffdevice.git package/custom/poweroffdevice
