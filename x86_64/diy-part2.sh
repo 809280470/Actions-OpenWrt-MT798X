@@ -87,6 +87,14 @@ else
   fi
 fi
 
+# lede vlmcsd 默认编译并且失败
+rm -rf feeds/packages/net/vlmcsd
+# 禁用 vlmcsd
+sed -i '/CONFIG_PACKAGE_vlmcsd/d' .config
+sed -i '/CONFIG_PACKAGE_luci-app-vlmcsd/d' .config
+echo '# CONFIG_PACKAGE_vlmcsd is not set' >> .config
+echo '# CONFIG_PACKAGE_luci-app-vlmcsd is not set' >> .config
+
 # =========================================================
 # 5. 网络参数优化（sysctl）
 # =========================================================
