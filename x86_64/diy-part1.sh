@@ -32,6 +32,7 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-poweroffdevice.git pack
 git clone --depth=1 https://github.com/isalikai/luci-app-owq-wol.git package/custom/owq-wol
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/custom/lucky
 git clone --depth=1 https://github.com/sbwml/luci-app-openlist2.git package/custom/openlist2
+git clone --depth=1 https://github.com/sbwml/luci-app-quickfile.git package/custom/quickfile
 
 git clone --depth=1 https://github.com/stackia/rtp2httpd.git package/custom/rtp2httpd
 
