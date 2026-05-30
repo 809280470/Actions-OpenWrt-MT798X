@@ -87,6 +87,9 @@ else
   fi
 fi
 
+# 更新 lucky
+rm -rf feeds/packages/net/lucky
+
 # lede vlmcsd 默认编译并且失败
 rm -rf feeds/packages/net/vlmcsd
 rm -rf package/feeds/luci/luci-app-vlmcsd
