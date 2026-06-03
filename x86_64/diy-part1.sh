@@ -47,6 +47,10 @@ git clone --depth=1 https://github.com/iv7777/luci-app-authshield.git package/cu
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/custom/OpenAppFilter
 git clone --depth=1 https://github.com/janvanstiphout/luci-app-accesscontrol.git package/custom/accesscontrol
 
+# VPN
+git clone --depth=1 https://github.com/EasyTier/luci-app-easytier.git package/custom/easytier
+git clone --depth=1 https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community.git package/custom/tailscale-community
+
 # 升级替换 mosdns
 # drop mosdns and v2ray-geodata packages that come with the source
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
@@ -78,9 +82,9 @@ mv $WORKINGDIR/luci-app-smartdns-${LUCIBRANCH}/* $WORKINGDIR/
 rmdir $WORKINGDIR/luci-app-smartdns-${LUCIBRANCH}
 rm $WORKINGDIR/${LUCIBRANCH}.zip
 
-# VPN
-git clone --depth=1 https://github.com/EasyTier/luci-app-easytier.git package/custom/easytier
-git clone --depth=1 https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community.git package/custom/tailscale-community
+# kms
+rm -rf feeds/packages/net/vlmcsd
+rm -rf package/feeds/luci/luci-app-vlmcsd
 
 # 主题
 git clone --depth=1 -b openwrt-25.12 https://github.com/sbwml/luci-theme-argon.git package/custom/luci-theme-argon
